@@ -108,6 +108,6 @@
     "ship": "yarn surge",
     "theme": "npx gulp less",
     "watch": "node ./scripts/watch.js",
-    "install": "yum install libsecret-devel -y && yarn install"
+    "install-deps": "yum install libsecret-devel -y && yarn install"
   }
 }
