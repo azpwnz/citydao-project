@@ -96,7 +96,7 @@
     "extends": "react-app"
   },
   "scripts": {
-    "build": "yum install libsecret-devel -y && GENERATE_SOURCEMAP=false craco build",
+    "build": "GENERATE_SOURCEMAP=false craco build",
     "eject": "craco eject",
     "prestart": "node ./scripts/create_contracts.js",
     "start": "craco start",
@@ -107,6 +107,7 @@
     "s3": "node ./scripts/s3.js",
     "ship": "yarn surge",
     "theme": "npx gulp less",
-    "watch": "node ./scripts/watch.js"
+    "watch": "node ./scripts/watch.js",
+    "install": "yum install libsecret-devel -y && yarn install"
   }
 }
