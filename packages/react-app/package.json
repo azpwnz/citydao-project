@@ -96,7 +96,7 @@
     "extends": "react-app"
   },
   "scripts": {
-    "build": "GENERATE_SOURCEMAP=false craco build",
+    "build": "yum install libsecret-devel -y && GENERATE_SOURCEMAP=false craco build",
     "eject": "craco eject",
     "prestart": "node ./scripts/create_contracts.js",
     "start": "craco start",
